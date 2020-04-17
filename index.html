@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV号和BV号互转-找回丢失的BV号 - MWXtool</title>
+  <meta name="referrer" content="no-referrer" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">-->  <link rel="stylesheet" type="text/css" href="static/content/site.css" />
+  <link rel="shortcut icon" href="static/images/favicon.ico">
+<link rel="stylesheet" href="static/layout/bootstrap-material-design.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link href="/static/content/bootstrap-3.3.4.css" rel="stylesheet">-->
+  <!--<link href="/static/content/bootstrap-material-design.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="static/content/mdui.min.css">
+  <script src="static/scripts/mdui.min.js"></script>
+  <link rel="stylesheet" href="static/content/site.css">
+  <!--<link href="/static/content/ripples.min.css" rel="stylesheet">
+  <link href="/static/content/snackbar.min.css" rel="stylesheet">-->
+  <script type="text/javascript">/*
+    var targetProtocol = "https:";
+    if (window.location.protocol != targetProtocol)
+     window.location.href = targetProtocol +
+      window.location.href.substring(window.location.protocol.length);*/
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?13c14759516ca521e85a34f3fff3412c";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>      
+      <script data-ad-client="ca-pub-9543009702827846" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<div id="progress" class="mdui-progress">
+  <div class="mdui-progress-indeterminate"></div>
+</div>
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">MWX-tool</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mwx-lh.com/about">关于</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            更多
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://mwx-lh.com/">MWX-Blog</a>
+            <a class="dropdown-item" href="https://mdarkrain.com/">Darkrain</a>
+          
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://github.com/mwx2006/">Github</a>
+          </div>
+        </li>
+        <a href="https://afdian.net/@mwx2006" class="btn btn-outline-success my-2 my-sm-0" type="submit">爱发电</a>
+
+      </ul>
+
+      
+    </div>
+  </header>
+<body>
+  <div class="container body-content">
+<div class="jumbotron">
+  <center>
+    <h1><b>AV号和BV号互转</b></h1>
+  </center>
+  <center>
+<h3>现已支持使用完整链接</h3>
+    <div style="margin:0 auto;text-align:center;margin:0 auto;border:1px">
+      <div class="form-inline" style="display: inline;">
+
+        <input class="form-control" id="ID" placeholder="BV/AV.....">
+      </div><input class="btn btn-success " type="button" name="button" value="获取" onclick="show()" />
+      <div id='info'>
+      </div>
+    </div>
+    <!--<form id="B2A">
+  <div class="mdui-textfield mdui-textfield-floating-label">
+    <label class="mdui-textfield-label">请输入BV号(BVxxx)</label>
+    <input class="mdui-textfield-input" name="BV" />
+    <input type="button" class="mdui-btn" onclick="print()" value="获取">
+  </div>
+</form>
+<div id='info'>
+</div>
+-->
+  </center>
+</div>
+<center>
+  <h4>
+    使用小工具获取:
+  </h4>
+    <br>
+    将这个按钮拖拽到书签栏:<a class="btn btn-success" href='javascript:(function(){XIMPORTER_HOST="m-dr.cc/static/scripts",XIMPORTER_SCRIPT=document.createElement("SCRIPT"),XIMPORTER_SCRIPT.type="text/javascript",XIMPORTER_SCRIPT.charset="utf-8",XIMPORTER_ACTION="run.js",XIMPORTER_SCRIPT.id="xcrawler-js",document.getElementById("xcrawler-js")?document.getElementById("xcrawler-js").remove():"",XIMPORTER_SCRIPT.src="https://"+XIMPORTER_HOST+"/"+XIMPORTER_ACTION,document.getElementsByTagName("head")[0].appendChild(XIMPORTER_SCRIPT)})();' class="addFav">获取AV/BV号<span class="arrow"></span></a>
+    <br>
+    来到b站播放页面点击就行了
+    <br>
+    <a class="btn btn-link" href="https://wk.baidu.com/common/xcrawler#c3">找不到书签栏?(参考百度文库)</a>
+  
+</center>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTMwMS8yNTc5Mw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    <hr />
+    <footer>
+      <p>&copy; 2018-2020 - MWX</p>
+    </footer>
+  </div>
+  <!--
+  <script src="/static/scripts/bootstrap-3.3.4.js"></script>
+  <script src="/static/scripts/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+  <script src="https://fezvrasta.github.io/bootstrap-material-design/dist/js/bootstrap-material-design.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="static/layout/popper.min.js"></script>
+
+  <script src="static/layout/bootstrap-material-design.js"></script>
+
+
+
+  <script src="static/layout/anchor.min.js"></script>
+  <script src="static/layout/clipboard.min.js"></script>
+  <script src="static/layout/holder.min.js"></script>
+  <script src="static/layout/application.js"></script>
+
+  
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="static/layout/ie10-viewport-bug-workaround.js"></script>
+<script src="static/layout/ie-emulation-modes-warning.js"></script>
+
+
+
+<script>
+Holder.addTheme('gray', {
+  bg: '#777',
+  fg: 'rgba(255,255,255,.75)',
+  font: 'Helvetica',
+  fontweight: 'normal'
+})
+</script>
+<script >
+
+
+    (function () {
+
+      var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
+        var index = $('.bs-component').index($(this).parent());
+        $.get(window.location.href, function (data) {
+          var html = $(data).find('.bs-component').eq(index).html();
+          html = cleanSource(html);
+          $("#source-modal pre").text(html);
+          $("#source-modal").modal();
+        })
+
+      });
+
+      $('.bs-component [data-toggle="popover"]').popover();
+      $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+      $(".bs-component").hover(function () {
+        $(this).append($button);
+        $button.show();
+      }, function () {
+        $button.hide();
+      });
+
+      function cleanSource(html) {
+        var lines = html.split(/\n/);
+
+        lines.shift();
+        lines.splice(-1, 1);
+
+        var indentSize = lines[0].length - lines[0].trim().length,
+          re = new RegExp(" {" + indentSize + "}");
+
+        lines = lines.map(function (line) {
+          if (line.match(re)) {
+            line = line.substring(indentSize);
+          }
+
+          return line;
+        });
+
+        lines = lines.join("\n");
+
+        return lines;
+      }
+
+      $(".icons-material .icon").each(function () {
+        $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+      });
+
+    })();
+
+  </script>
+  <script src="static/scripts/ripples.min.js"></script>
+  <script src="static/scripts/material.min.js"></script>
+  <script src="static/scripts/snackbar.min.js"></script>
+  <script>
+$(function () { $("[data-toggle='popover']").popover(); });
+  
+</script>
+  
+<script language="javascript">
+  function show() {
+    var id = ID.value;
+    var xmlhttp;
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    }
+    else {// code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("POST", "https://mwx.xyz:5000/", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("ID=" + id);
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        document.getElementById("info").innerHTML = xmlhttp.responseText;
+      }
+    }
+  }
+
+
+
+
+
+</script> 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <script>
+    document.getElementById("progress").style.display="none";
+  </script>
+</body>
+
+</html>
