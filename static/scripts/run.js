@@ -1,1 +1,1 @@
-var pattern = /([Bb][Vv])(([0-9a-zA-Z])*)/,str = document.URL,patternav = /([Aa][Vv])(([0-9])*)/,yes = pattern.test(str),avyes = patternav.test(str);if (0 == avyes && 0 == yes) window.alert("我觉得不太对");else window.alert("当前视频AV号:\nav" +window.__INITIAL_STATE__.aid+ "\n当前视频BV号:\n" +window.__INITIAL_STATE__.bvid);
+window.alert("当前视频AV号:\nav" +window.__INITIAL_STATE__.aid+ "\n当前视频BV号:\n" +window.__INITIAL_STATE__.bvid);
